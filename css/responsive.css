@@ -1,0 +1,48 @@
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .nav-links {
+        margin-top: 1rem;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav-links li {
+        margin: 0.5rem 0;
+    }
+
+    section {
+        padding: 2rem 1rem;
+    }
+
+    /* Add hero section responsive styles */
+    .hero-section {
+        background-attachment: scroll; /* Better performance on mobile */
+    }
+
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .subtitle {
+        font-size: 1.2rem;
+    }
+
+    .content-page {
+        padding-top: 120px;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .music-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-form {
+        padding: 1rem;
+    }
+} 
