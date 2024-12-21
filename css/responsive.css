@@ -45,4 +45,30 @@
     .contact-form {
         padding: 1rem;
     }
+
+    .content-section {
+        grid-template-columns: 1fr;
+        height: auto;
+        gap: 1rem;
+    }
+
+    .image-container {
+        position: relative;
+        top: 0;
+    }
+
+    .content-image {
+        height: 400px;
+    }
+
+    .content-text {
+        max-height: none;
+        padding: 1rem 0;
+        overflow-y: visible;
+    }
+
+    .content-page {
+        margin: 10px;
+        padding-top: 100px;
+    }
 } 
