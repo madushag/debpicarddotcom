@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact - Deb Picard</title>
+    <title>Events - Deb Picard</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/responsive.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -27,24 +27,34 @@
     </header>
 
     <main class="content-page">
-        <section class="contact-section">
-            <h1 class="title">Contact</h1>
-            <div class="contact-content">
-                <form class="contact-form">
-                    <div class="form-group">
-                        <label for="name">Name:</label>
-                        <input type="text" id="name" name="name" required>
+        <section class="events-section">
+            <h1 class="section-title centered">Upcoming Events</h1>
+            <div class="events-content">
+                <div class="event-item">
+                    <div class="event-date">
+                        <span class="month">MAR</span>
+                        <span class="day">15</span>
                     </div>
-                    <div class="form-group">
-                        <label for="email">Email:</label>
-                        <input type="email" id="email" name="email" required>
+                    <div class="event-details">
+                        <h3>Live at The Burren</h3>
+                        <p class="event-location">247 Elm St, Somerville, MA</p>
+                        <p class="event-time">8:00 PM - 10:00 PM</p>
+                        <a href="#" class="event-link">More Info</a>
                     </div>
-                    <div class="form-group">
-                        <label for="message">Message:</label>
-                        <textarea id="message" name="message" required></textarea>
+                </div>
+
+                <div class="event-item">
+                    <div class="event-date">
+                        <span class="month">APR</span>
+                        <span class="day">22</span>
                     </div>
-                    <button type="submit">Send Message</button>
-                </form>
+                    <div class="event-details">
+                        <h3>Club Passim</h3>
+                        <p class="event-location">47 Palmer St, Cambridge, MA</p>
+                        <p class="event-time">7:30 PM - 9:30 PM</p>
+                        <a href="#" class="event-link">More Info</a>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
