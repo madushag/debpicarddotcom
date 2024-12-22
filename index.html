@@ -35,68 +35,59 @@
     </header>
 
     <main class="container-fluid flex-grow-1 d-flex flex-column">
-        <!-- Center section with title -->
-        <div class="row" style="height: 60vh; margin-top: -40px;">
-            <div class="col-12 d-flex align-items-center justify-content-center">
-                <div class="hero-content text-center text-white">
-                    <h1 class="display-1 mb-3">Deb Picard</h1>
-                    <p class="lead">Singer | Songwriter | Performer</p>
-                </div>
-            </div>
-        </div>
-        
-        <!-- Bottom section with carousel and featured song -->
-        <div class="row">
-            <div class="col-12">
-                <!-- Image Carousel -->
-                <div class="carousel-section" style="margin-top: -120px; margin-bottom: 3rem;">
-                    <div id="collaborationCarousel" class="carousel slide" data-bs-ride="carousel">
-                        <div class="carousel-indicators">
-                            <button type="button" data-bs-target="#collaborationCarousel" data-bs-slide-to="0" class="active"></button>
-                            <button type="button" data-bs-target="#collaborationCarousel" data-bs-slide-to="1"></button>
-                            <button type="button" data-bs-target="#collaborationCarousel" data-bs-slide-to="2"></button>
-                        </div>
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="images/collab-1.png" class="d-block w-100" alt="Collaboration 1">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="images/collab-2.png" class="d-block w-100" alt="Collaboration 2">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="images/collab-3.png" class="d-block w-100" alt="Collaboration 3">
-                            </div>
-                        </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#collaborationCarousel" data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon"></span>
-                            <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#collaborationCarousel" data-bs-slide="next">
-                            <span class="carousel-control-next-icon"></span>
-                            <span class="visually-hidden">Next</span>
-                        </button>
+        <div class="content-page p-4">
+            <!-- Hero section -->
+            <div class="row" style="height: 20vh;">
+                <div class="col-12 d-flex align-items-center justify-content-center">
+                    <div class="hero-content text-center text-white">
+                        <h1 class="display-1 mb-3 fw-semibold">Deb Picard</h1>
+                        <p class="lead">Singer | Songwriter | Performer</p>
                     </div>
                 </div>
-                
-                <!-- Divider -->
-                <div class="divider">
-                    <hr class="divider-line">
-                </div>
-                
-                <div class="featured-song container-fluid px-4 mb-5">
-                    <h3 class="text-center text-white mb-5">Featured Song</h3>
-                    <div class="card bg-dark bg-opacity-25" style="max-width: 50%; margin: 0 auto;">
-                        <div class="card-body p-4">
-                            <h4 class="card-title text-center text-white mb-3">Riverboat</h4>
-                            <div class="ratio ratio-16x9 mb-4" style="min-height: 35vh;">
-                                <iframe src="https://www.youtube.com/embed/1GmQJVvrCb0" 
-                                        title="Riverboat" 
-                                        allowfullscreen>
-                                </iframe>
+            </div>
+            
+            <!-- Image Collage -->
+            <div class="row mb-5">
+                <div class="col-12">
+                    <div class="image-collage">
+                        <div class="row g-3 justify-content-center">
+                            <div class="col-12 col-md-4">
+                                <img src="images/collab-1.png" alt="Collaboration 1" class="img-fluid rounded shadow">
                             </div>
-                            <p class="text-white-50 text-center mb-0">
-                                From the 2019 EP "Old Songs"
-                            </p>
+                            <div class="col-12 col-md-4">
+                                <img src="images/collab-2.png" alt="Collaboration 2" class="img-fluid rounded shadow">
+                            </div>
+                            <div class="col-12 col-md-4">
+                                <img src="images/self-older.jpg" alt="Collaboration 3" class="img-fluid rounded shadow">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Gradient Divider -->
+            <div class="divider">
+                <hr class="divider-line">
+            </div>
+            
+            <!-- Bottom section with featured song -->
+            <div class="row">
+                <div class="col-12">
+                    <div class="featured-song container-fluid px-4 mb-5">
+                        <h3 class="text-center text-white mb-5">Featured Song</h3>
+                        <div class="card bg-dark bg-opacity-25" style="max-width: 75%; margin: 0 auto;">
+                            <div class="card-body p-4">
+                                <h4 class="card-title text-center text-white mb-3">Riverboat</h4>
+                                <div class="ratio ratio-16x9 mb-4" style="min-height: 35vh;">
+                                    <iframe src="https://www.youtube.com/embed/1GmQJVvrCb0" 
+                                            title="Riverboat" 
+                                            allowfullscreen>
+                                    </iframe>
+                                </div>
+                                <p class="text-white-50 text-center mb-0">
+                                    From the 2019 EP "Old Songs"
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
