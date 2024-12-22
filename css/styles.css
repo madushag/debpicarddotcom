@@ -1,11 +1,78 @@
 /* Base styles */
 body {
     min-height: 100vh;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Update button styles */
+.btn {
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    border-radius: 4px;
+    padding: 0.625rem 1.5rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    transition: box-shadow 0.2s ease-in-out;
+}
+
+.btn:hover {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+/* Card styles */
+.card {
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: box-shadow 0.2s ease-in-out;
+}
+
+.card:hover {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* Form styles */
+.form-control {
+    border-radius: 4px;
+    padding: 0.75rem;
+    border: 1px solid rgba(255,255,255,0.2);
+    transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.form-control:focus {
+    border-color: #fff;
+    box-shadow: 0 0 0 2px rgba(255,255,255,0.2);
+}
+
+/* Navigation styles */
+.navbar-nav .nav-link {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 0.5rem 1rem !important;
+    transition: opacity 0.2s ease-in-out;
+}
+
+/* Section titles */
+.section-title {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    color: #fff;
+    text-align: center;
+}
+
+/* Album link styles */
+.album-link {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
 }
 
 /* Full-page background for home page */
 .home-page {
-    background-image: url('../images/Studio-Project.png');
+    background-image: url('../images/endless-road.png');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -20,6 +87,7 @@ body {
     right: 0;
     bottom: 0;
     background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(3px);
     z-index: 0;
 }
 
@@ -37,35 +105,6 @@ body {
     min-height: calc(100vh - 200px);
 }
 
-/* Custom fonts and text styles */
-.section-title {
-    font-family: Arial, sans-serif;
-    color: #fff;
-    text-align: center;
-}
-
-/* Custom navbar styles */
-.navbar-nav .nav-link {
-    font-family: Arial, sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    font-size: 0.9rem;
-    padding: 0.5rem 1rem !important;
-}
-
-/* Custom form styles */
-.form-control {
-    background-color: rgba(255, 255, 255, 0.1) !important;
-    border: 1px solid rgba(255, 255, 255, 0.2) !important;
-    color: #fff !important;
-}
-
-.form-control:focus {
-    background-color: rgba(255, 255, 255, 0.15) !important;
-    border-color: rgba(255, 255, 255, 0.3) !important;
-    box-shadow: 0 0 0 0.25rem rgba(255, 255, 255, 0.1) !important;
-}
-
 /* Album cover styles */
 .album-cover {
     width: 100%;
@@ -73,24 +112,6 @@ body {
     object-fit: cover;
     border-radius: 8px;
     margin-top: 1rem;
-}
-
-/* Album link styles */
-.album-link {
-    display: block;
-    background: #fff;
-    color: #000;
-    padding: 0.8rem 2rem;
-    text-decoration: none;
-    border-radius: 4px;
-    text-align: center;
-    margin: 1rem 0;
-    font-family: Arial, sans-serif;
-    transition: opacity 0.3s ease;
-}
-
-.album-link:hover {
-    opacity: 0.8;
 }
 
 /* Update content text styles */
@@ -155,26 +176,50 @@ body {
 }
 
 /* Featured song styles */
+.featured-song {
+    padding-top: 4rem;
+    position: relative;
+    z-index: 1;
+}
+
+/* Hero content styles */
+.hero-content {
+    position: relative;
+    z-index: 1;
+}
+
 .featured-song h3 {
-    font-family: "Permanent Marker", serif;
-    font-size: 2rem;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.5rem;
     color: #fff;
+    font-weight: 300;
+    letter-spacing: 1px;
 }
 
 .featured-song h4 {
-    font-family: "Permanent Marker", serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 1.5rem;
     color: #fff;
+    font-weight: 300;
+    letter-spacing: 1px;
 }
 
 .featured-song .card {
     border: none;
     backdrop-filter: blur(10px);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.featured-song .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
 .featured-song .ratio {
     border-radius: 8px;
     overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 /* Carousel styles */
@@ -189,7 +234,7 @@ body {
 }
 
 .carousel-item img {
-    height: 300px;
+    height: 500px;
     object-fit: cover;
 }
 
@@ -197,6 +242,10 @@ body {
 @media (max-width: 768px) {
     .carousel-section {
         width: 90%;
+    }
+
+    .carousel-item img {
+        height: 350px;
     }
 }
 
@@ -276,6 +325,91 @@ body {
         height: auto;
         max-height: calc(100vh - 400px);
         padding-bottom: 2rem;
+    }
+}
+
+/* Navigation gradient styles */
+.nav-gradient {
+    background: linear-gradient(to bottom,
+        rgba(18, 18, 18, 1) 0%,
+        rgba(18, 18, 18, 0.8) 60%,
+        rgba(18, 18, 18, 0) 100%
+    );
+}
+
+/* Update scroll behavior */
+.nav-gradient.scrolled {
+    background: rgba(18, 18, 18, 0.95);
+}
+
+/* Footer gradient styles */
+.footer-gradient {
+    background: linear-gradient(to top,
+        rgba(18, 18, 18, 1) 0%,
+        rgba(18, 18, 18, 0.8) 60%,
+        rgba(18, 18, 18, 0) 100%
+    );
+    padding: 2rem 0;
+    margin-top: auto;
+}
+
+/* Update card title styles in music page */
+.card-title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+    color: #fff;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+/* Update subtitle styles */
+.card-body h4 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+    color: #fff;
+    font-weight: 300;
+    letter-spacing: 1px;
+    opacity: 0.9;
+}
+
+/* Update album link styles */
+.album-link {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    display: block;
+    background: #fff;
+    color: #000;
+    padding: 0.8rem 2rem;
+    text-decoration: none;
+    border-radius: 4px;
+    text-align: center;
+    margin: 1rem 0;
+    transition: opacity 0.3s ease;
+}
+
+/* Add divider styles */
+.divider {
+    width: 50%;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.divider-line {
+    border: 0;
+    height: 1px;
+    background: linear-gradient(to right,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 0.5) 50%,
+        rgba(255, 255, 255, 0) 100%
+    );
+}
+
+/* Make divider responsive */
+@media (max-width: 768px) {
+    .divider {
+        width: 80%;
     }
 }
  

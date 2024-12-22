@@ -1,7 +1,7 @@
 /* Responsive styles */
 @media (max-width: 768px) {
     .section-title {
-        font-size: 2rem;
+        font-size: 1.8rem;
     }
     
     .navbar-collapse {
@@ -10,8 +10,53 @@
         border-radius: 0.5rem;
     }
 
+    /* Hero content mobile styles */
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-content .lead {
+        font-size: 1rem;
+    }
+
+    /* Featured song mobile styles */
+    .featured-song h3 {
+        font-size: 1.8rem;
+    }
+
+    .featured-song h4 {
+        font-size: 1.2rem;
+    }
+
+    /* Card title mobile styles */
+    .card-title {
+        font-size: 1.3rem;
+    }
+
+    .card-body h4 {
+        font-size: 1rem;
+    }
+
+    .carousel-section {
+        width: 90%;
+        margin-top: -60px !important;
+    }
+
+    .carousel-item img {
+        height: 350px;
+    }
+
     footer .col-md-4 {
         text-align: center !important;
         margin: 0.5rem 0;
+    }
+
+    /* Featured video mobile styles */
+    .featured-song .card {
+        max-width: 90% !important;
+    }
+
+    .featured-song .ratio {
+        min-height: 45vh !important;
     }
 } 

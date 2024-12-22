@@ -10,10 +10,10 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
 // Add scroll event listener for header
 window.addEventListener('scroll', function() {
-    const header = document.querySelector('header');
+    const header = document.querySelector('.navbar');
     if (window.scrollY > 50) {
-        header.style.backgroundColor = 'rgba(0, 0, 0, 0.9)';
+        header.classList.add('scrolled');
     } else {
-        header.style.backgroundColor = 'rgba(0, 0, 0, 0.8)';
+        header.classList.remove('scrolled');
     }
 }); 
