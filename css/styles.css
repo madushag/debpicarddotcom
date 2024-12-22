@@ -34,6 +34,7 @@ body {
     max-width: 1320px;
     margin: 100px auto 20px;
     padding-bottom: 2rem;
+    min-height: calc(100vh - 200px);
 }
 
 /* Custom fonts and text styles */
@@ -202,10 +203,10 @@ body {
 /* Video container styles */
 .video-container {
     padding-right: 1rem;
-    padding-bottom: 2rem;
+    padding-bottom: 4rem;
     scrollbar-width: thin;
     scrollbar-color: rgba(255, 255, 255, 0.5) rgba(255, 255, 255, 0.1);
-    max-height: calc(100vh - 300px);
+    max-height: calc(100vh - 350px);
     overflow-y: auto;
 }
 
@@ -239,5 +240,42 @@ body {
 
 .video-container::-webkit-scrollbar-thumb:active {
     background: rgba(255, 255, 255, 0.6);
+}
+
+/* Add responsive styles for mobile */
+@media (max-width: 768px) {
+    .content-page {
+        margin: 80px auto 80px;
+        min-height: calc(100vh - 160px);
+    }
+
+    .video-container {
+        max-height: calc(100vh - 300px);
+        padding-bottom: 80px;
+    }
+
+    footer {
+        position: relative;
+        margin-top: auto;
+    }
+}
+
+/* Content text styles for About page */
+@media (max-width: 768px) {
+    .content-row {
+        height: auto;
+        margin-bottom: 2rem;
+    }
+
+    .image-wrapper img {
+        height: 300px;
+        margin-bottom: 2rem;
+    }
+
+    .content-text {
+        height: auto;
+        max-height: calc(100vh - 400px);
+        padding-bottom: 2rem;
+    }
 }
  
