@@ -376,8 +376,12 @@ body {
  
 
 .caveat-hero-title {
-    font-family: "Caveat", serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-  }
+    font-family: 'Caveat', cursive;
+    font-size: 4rem;
+}
+
+@media (max-width: 768px) {
+    .caveat-hero-title {
+        font-size: 3.5rem;
+    }
+}
