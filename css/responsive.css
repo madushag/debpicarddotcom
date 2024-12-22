@@ -1,96 +1,17 @@
 /* Responsive styles */
-@media screen and (max-width: 768px) {
-    nav {
-        flex-direction: column;
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 2rem;
+    }
+    
+    .navbar-collapse {
+        background-color: rgba(0, 0, 0, 0.95);
         padding: 1rem;
+        border-radius: 0.5rem;
     }
 
-    .nav-links {
-        margin-top: 1rem;
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .nav-links li {
+    footer .col-md-4 {
+        text-align: center !important;
         margin: 0.5rem 0;
-    }
-
-    section {
-        padding: 2rem 1rem;
-    }
-
-    /* Add hero section responsive styles */
-    .hero-section {
-        background-attachment: scroll; /* Better performance on mobile */
-    }
-
-    .hero-content h1 {
-        font-size: 2.5rem;
-    }
-
-    .subtitle {
-        font-size: 1.2rem;
-    }
-
-    .content-page {
-        padding-top: 120px;
-        padding-left: 1rem;
-        padding-right: 1rem;
-    }
-
-    .music-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .contact-form {
-        padding: 1rem;
-    }
-
-    .content-section {
-        grid-template-columns: 1fr;
-        height: auto;
-        gap: 1rem;
-    }
-
-    .image-container {
-        position: relative;
-        top: 0;
-    }
-
-    .content-image {
-        height: 400px;
-    }
-
-    .content-text {
-        max-height: none;
-        padding: 1rem 0;
-        overflow-y: visible;
-    }
-
-    .content-page {
-        margin: 10px;
-        padding-top: 100px;
-    }
-
-    .music-item iframe {
-        min-height: 300px;
-    }
-
-    .event-item {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        gap: 1rem;
-    }
-
-    .event-date {
-        min-width: 80px;
-    }
-}
-
-@media screen and (max-width: 1200px) {
-    .music-grid {
-        grid-template-columns: 1fr;
-        gap: 2rem;
     }
 } 
