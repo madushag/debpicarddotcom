@@ -16,4 +16,12 @@ window.addEventListener('scroll', function() {
     } else {
         header.classList.remove('scrolled');
     }
+});
+
+// Update footer year dynamically
+document.addEventListener('DOMContentLoaded', function() {
+    const yearElement = document.getElementById('current-year');
+    if (yearElement) {
+        yearElement.textContent = new Date().getFullYear();
+    }
 }); 

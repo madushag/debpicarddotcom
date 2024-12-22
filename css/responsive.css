@@ -4,6 +4,26 @@
         font-size: 1.8rem;
     }
     
+    /* Increase Bio heading size on mobile */
+    .about-page .section-title.caveat-hero-title {
+        font-size: 4rem;
+    }
+    
+    /* Increase Music heading size on mobile */
+    .music-page .section-title.caveat-hero-title {
+        font-size: 4rem;
+    }
+    
+    /* Increase Contact heading size on mobile */
+    .contact-page .section-title.caveat-hero-title {
+        font-size: 4rem;
+    }
+    
+    /* Increase Events heading size on mobile */
+    .events-page .section-title.caveat-hero-title {
+        font-size: 4rem;
+    }
+    
     .navbar-collapse {
         background-color: rgba(0, 0, 0, 0.95);
         padding: 1rem;
