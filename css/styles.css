@@ -25,18 +25,15 @@ body {
 
 /* Content page styles */
 .content-page {
-    position: fixed;
-    top: 80px;
-    left: 50%;
-    transform: translateX(-50%);
+    position: relative;
     z-index: 1;
     background-color: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px);
     border-radius: 8px;
-    height: calc(100vh - 160px);
     width: 100%;
     max-width: 1320px;
-    overflow: hidden;
+    margin: 100px auto 20px;
+    padding-bottom: 2rem;
 }
 
 /* Custom fonts and text styles */
@@ -154,5 +151,93 @@ body {
 /* Add content row height */
 .content-row {
     height: calc(100vh - 280px);
+}
+
+/* Featured song styles */
+.featured-song h3 {
+    font-family: "Permanent Marker", serif;
+    font-size: 2rem;
+    color: #fff;
+}
+
+.featured-song h4 {
+    font-family: "Permanent Marker", serif;
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.featured-song .card {
+    border: none;
+    backdrop-filter: blur(10px);
+}
+
+.featured-song .ratio {
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* Carousel styles */
+.carousel-section {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.carousel-inner {
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.carousel-item img {
+    height: 300px;
+    object-fit: cover;
+}
+
+/* Add responsive styles */
+@media (max-width: 768px) {
+    .carousel-section {
+        width: 90%;
+    }
+}
+
+/* Video container styles */
+.video-container {
+    padding-right: 1rem;
+    padding-bottom: 2rem;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(255, 255, 255, 0.5) rgba(255, 255, 255, 0.1);
+    max-height: calc(100vh - 300px);
+    overflow-y: auto;
+}
+
+.video-container .row {
+    padding-bottom: 2rem;
+}
+
+/* Webkit scrollbar styles for video container */
+.video-container::-webkit-scrollbar {
+    width: 8px;
+    background-color: transparent;
+}
+
+.video-container::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    margin: 5px;
+}
+
+.video-container::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    background-clip: padding-box;
+}
+
+.video-container::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.5);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.video-container::-webkit-scrollbar-thumb:active {
+    background: rgba(255, 255, 255, 0.6);
 }
  
