@@ -1,0 +1,10 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs/debpicarddotcom/config
+/.vs/debpicarddotcom/copilot-chat/*
+/.vs/debpicarddotcom/CopilotIndices/*
+/.vs/debpicarddotcom/FileContentIndex
+/.vs/slnx.sqlite
+/.vs/tasks.vs.json
